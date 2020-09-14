@@ -1,7 +1,7 @@
 ﻿#1.	Script to update all users primary SMTP address to @contoso.fabrikam.com (with the exception of ACME employees)
 #Read names and Primary SMTP data from csv file. Update everyone's primary SMTP address to @contoso.fabrikam.com
 
-$AddressFile = "AZ-NewPrimarySMTP_v2.csv"
+$AddressFile = "NewPrimarySMTP.csv"
 
 While((Get-PSSession).State -ne 'Opened')#if no active session
 {
